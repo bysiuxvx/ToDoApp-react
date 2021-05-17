@@ -5,11 +5,11 @@
   align-items: center;
 }
 
-p {
+footer p {
   color: white;
   text-align: center;
 }
-span.githubProfile {
+footer span.githubProfile {
   color: orange;
   cursor: pointer;
 }

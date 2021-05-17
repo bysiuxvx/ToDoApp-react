@@ -9,7 +9,7 @@ const Footer = () => {
         <span
           className="githubProfile"
           onClick={() => {
-            window.open('https://github.com/bysiuxvx/weather-app', '_blank');
+            window.open('https://github.com/bysiuxvx/', '_blank');
           }}>
           Patryk Byszek
         </span>

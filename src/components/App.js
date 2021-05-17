@@ -73,13 +73,17 @@ const App = () => {
       <header>
         <h2>Task list</h2>
       </header>
-      <div className="wrapper">
-        <AddTask addTask={addTask} />
-        <TaskList
-          tasks={tasks}
-          changeStatus={handleChangeStatus}
-          delete={deleteTask}
-        />
+      <div className="appPanel">
+        <div className="addTask">
+          <AddTask addTask={addTask} />
+        </div>
+        <div className="taskList">
+          <TaskList
+            tasks={tasks}
+            changeStatus={handleChangeStatus}
+            delete={deleteTask}
+          />
+        </div>
       </div>
       <footer>
         <Footer />

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../styles/addtask.css';
 
 const AddTask = (props) => {
   const minDate = new Date().toISOString().slice(0, 10);
@@ -26,34 +27,41 @@ const AddTask = (props) => {
   return (
     <>
       <div className="newTaskPanel">
-        <label html="task name">
-          Task name
-          <input
-            type="text"
-            placeholder={'What needs to be done?'}
-            maxLength="30"
-            value={text}
-            onChange={(event) => setText(event.target.value)}
-          />
-        </label>{' '}
-        <label htmlFor="urgent">
-          Is it urgent?
-          <input
-            type="checkbox"
-            checked={urgent}
-            onChange={(event) => setUrgent(event.target.checked)}
-          />
-        </label>
-        <br />
-        <label htmlFor="date">
-          Finish by{' '}
-          <input
-            type="date"
-            min={minDate}
-            value={date}
-            onChange={(event) => setDate(event.target.value)}
-          />
-        </label>
+        <div className="form">
+          <label html="task name">
+            Task name
+            <input
+              type="text"
+              placeholder={'What needs to be done?'}
+              maxLength="30"
+              value={text}
+              onChange={(event) => setText(event.target.value)}
+            />
+          </label>
+          <br />
+          <div className="datePicker">
+            <label htmlFor="date">
+              Finish by{' '}
+              <input
+                type="date"
+                min={minDate}
+                value={date}
+                onChange={(event) => setDate(event.target.value)}
+              />
+            </label>
+          </div>
+
+          <label class="checkbox-label">
+            {' '}
+            <div className="title">Urgent?</div>
+            <input
+              type="checkbox"
+              checked={urgent}
+              onChange={(event) => setUrgent(event.target.checked)}
+            />
+            <span class="checkbox-custom rectangular"></span>
+          </label>
+        </div>
         <button onClick={handleSubmit}>Add</button>
       </div>
     </>

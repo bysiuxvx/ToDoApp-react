@@ -25,6 +25,7 @@ const Task = (props) => {
     let finish = new Date(finishDate).toLocaleString();
     finish = finish.slice(0, 10);
     let final = formatDate(finish);
+    final = final.toString();
     return (
       <div className="task">
         <p>
