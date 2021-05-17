@@ -69,13 +69,15 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Task list</h1>
-      <AddTask addTask={addTask} />
-      <TaskList
-        tasks={tasks}
-        changeStatus={handleChangeStatus}
-        delete={deleteTask}
-      />
+      <div className="wrapper">
+        <h1>Task list</h1>
+        <AddTask addTask={addTask} />
+        <TaskList
+          tasks={tasks}
+          changeStatus={handleChangeStatus}
+          delete={deleteTask}
+        />
+      </div>
     </div>
   );
 };

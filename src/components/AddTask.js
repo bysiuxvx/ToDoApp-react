@@ -25,7 +25,7 @@ const AddTask = (props) => {
 
   return (
     <>
-      <div className="new-task-panel">
+      <div className="newTaskPanel">
         <input
           type="text"
           placeholder={'What needs to be done?'}

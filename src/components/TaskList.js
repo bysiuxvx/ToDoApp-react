@@ -13,13 +13,13 @@ const TaskList = (props) => {
   ));
 
   return (
-    <>
+    <div className="taskList">
       <h3>Active Tasks ({active.length})</h3>
       <ul>{activeTasks}</ul>
       <hr />
       <h3>Completed Tasks ({done.length})</h3>
       <ul>{doneTasks}</ul>
-    </>
+    </div>
   );
 };
 
