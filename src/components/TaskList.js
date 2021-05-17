@@ -8,7 +8,9 @@ const TaskList = (props) => {
   const activeTasks = active.map((task) => (
     <Task key={task.id} task={task} changeStatus={props.changeStatus} />
   ));
-  const doneTasks = done.map((task) => <Task key={task.id} task={task} />);
+  const doneTasks = done.map((task) => (
+    <Task key={task.id} task={task} delete={props.delete} />
+  ));
 
   return (
     <>
