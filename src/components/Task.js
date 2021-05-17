@@ -5,22 +5,34 @@ const Task = (props) => {
 
   const style = { color: 'red' };
 
+  const formatDate = (dateStr) => {
+    const [day, month, year] = dateStr.split('/');
+    let newDate = `${day}-${month}-${year}`;
+    return newDate;
+  };
+
   if (active) {
     return (
-      <p>
-        <strong style={urgent ? style : null}>{text}</strong>, id: {id}, finish
-        by: {targetDate}{' '}
+      <div className="task">
+        <p>
+          <strong style={urgent ? style : null}>{text}</strong>, id: {id} <br />
+          finish by: {targetDate}{' '}
+        </p>
         <button onClick={() => props.changeStatus(id)}>Done</button>
-      </p>
+      </div>
     );
   } else {
-    const finish = new Date(finishDate).toLocaleString();
+    let finish = new Date(finishDate).toLocaleString();
+    finish = finish.slice(0, 10);
+    let final = formatDate(finish);
     return (
-      <p>
-        <strong style={urgent ? style : null}>{text}</strong>, id: {id}, finish
-        by: {targetDate}, finished: {finish}{' '}
-        <button onClick={() => props.delete(id)}>X</button>
-      </p>
+      <div className="task">
+        <p>
+          <strong style={urgent ? style : null}>{text}</strong>, id: {id} <br />
+          finish by: {targetDate}, finished: {final}{' '}
+          <button onClick={() => props.delete(id)}>X</button>
+        </p>
+      </div>
     );
   }
 };

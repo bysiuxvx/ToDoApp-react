@@ -43,17 +43,17 @@ const App = () => {
     setTasks(newArr);
   };
 
-  const addTask = (text) => {
+  const addTask = (text, urgent, date) => {
     const newArr = [...tasks];
     const task = {
       text: text,
       id: counter,
-      urgent: true,
+      urgent,
       active: true,
-      targetDate: null,
+      targetDate: date,
       finishDate: null,
     };
-    console.log(task, tasks);
+    // console.log(task, tasks);
     newArr.push(task);
     setTasks(newArr);
     setCounter((prev) => prev + 1);
@@ -69,6 +69,7 @@ const App = () => {
 
   return (
     <div className="App">
+      <h1>Task list</h1>
       <AddTask addTask={addTask} />
       <TaskList
         tasks={tasks}
