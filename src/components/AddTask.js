@@ -26,13 +26,16 @@ const AddTask = (props) => {
   return (
     <>
       <div className="newTaskPanel">
-        <input
-          type="text"
-          placeholder={'What needs to be done?'}
-          maxLength="30"
-          value={text}
-          onChange={(event) => setText(event.target.value)}
-        />{' '}
+        <label html="task name">
+          Task name
+          <input
+            type="text"
+            placeholder={'What needs to be done?'}
+            maxLength="30"
+            value={text}
+            onChange={(event) => setText(event.target.value)}
+          />
+        </label>{' '}
         <label htmlFor="urgent">
           Is it urgent?
           <input
@@ -43,7 +46,7 @@ const AddTask = (props) => {
         </label>
         <br />
         <label htmlFor="date">
-          Target Date{' '}
+          Finish by{' '}
           <input
             type="date"
             min={minDate}

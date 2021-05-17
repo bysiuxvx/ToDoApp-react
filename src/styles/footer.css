@@ -1,0 +1,15 @@
+.footer {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  color: white;
+  text-align: center;
+}
+span.githubProfile {
+  color: orange;
+  cursor: pointer;
+}

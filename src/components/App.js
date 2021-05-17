@@ -2,6 +2,7 @@ import React, { Component, useState } from 'react';
 import '../styles/App.css';
 import AddTask from './AddTask';
 import TaskList from './TaskList';
+import Footer from './Footer';
 
 const App = () => {
   const [counter, setCounter] = useState(1);
@@ -53,7 +54,7 @@ const App = () => {
       targetDate: date,
       finishDate: null,
     };
-    // console.log(task, tasks);
+
     newArr.push(task);
     setTasks(newArr);
     setCounter((prev) => prev + 1);
@@ -68,9 +69,11 @@ const App = () => {
   };
 
   return (
-    <div className="App">
+    <div className="app">
+      <header>
+        <h2>Task list</h2>
+      </header>
       <div className="wrapper">
-        <h1>Task list</h1>
         <AddTask addTask={addTask} />
         <TaskList
           tasks={tasks}
@@ -78,6 +81,9 @@ const App = () => {
           delete={deleteTask}
         />
       </div>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };

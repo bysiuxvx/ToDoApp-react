@@ -4,11 +4,33 @@
   box-sizing: border-box;
 }
 
-.App {
+.app {
   text-align: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: #1f1f1f;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+  position: relative;
+  height: 60vh;
+  background: rgba(105, 168, 142, 0.356);
+  width: 700px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 15%);
 }
+
+header {
+  background-color: #fff;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  background-color: royalblue;
+  width: 100%;
+}
+
+/* 1f1f1f */
