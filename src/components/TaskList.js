@@ -17,7 +17,7 @@ const TaskList = (props) => {
       <h3>Active Tasks ({active.length})</h3>
       <ul>{activeTasks}</ul>
       <hr />
-      <h3>Done Tasks ({done.length})</h3>
+      <h3>Completed Tasks ({done.length})</h3>
       <ul>{doneTasks}</ul>
     </>
   );

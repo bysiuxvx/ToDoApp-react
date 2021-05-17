@@ -6,6 +6,7 @@ const AddTask = (props) => {
   const handleSubmit = () => {
     if (text.length > 5) {
       const add = props.addTask(text);
+      // setText('');
     } else alert('Task name too short!');
   };
 
