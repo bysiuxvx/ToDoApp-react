@@ -16,7 +16,7 @@ const AddTask = (props) => {
 
   const handleSubmit = () => {
     let fixedDate = formatDate(date);
-    if (text.length > 5) {
+    if (text.length > 0) {
       props.addTask(text, urgent, fixedDate);
       setText('');
       setUrgent(false);

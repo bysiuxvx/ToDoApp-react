@@ -12,14 +12,15 @@
 }
 header {
   background-color: #fff;
+  height: 5vh;
 }
 
 .appPanel {
   position: absolute;
-  height: 60vh;
+  height: 800px;
   background-color: rgba(105, 168, 142, 0.356);
   width: 700px;
-  top: 45%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 25px;

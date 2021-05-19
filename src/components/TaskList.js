@@ -1,5 +1,6 @@
 import React from 'react';
 import Task from './Task';
+import '../styles/tasklist.css';
 
 const TaskList = (props) => {
   const active = props.tasks.filter((task) => task.active);
@@ -12,14 +13,29 @@ const TaskList = (props) => {
     <Task key={task.id} task={task} delete={props.delete} />
   ));
 
-  return (
-    <div className="taskList">
-      <h3>Active Tasks ({active.length})</h3>
-      <ul>{activeTasks}</ul>
+  const completedList = (
+    <>
       <hr />
-      <h3>Completed Tasks ({done.length})</h3>
-      <ul>{doneTasks}</ul>
-    </div>
+      <div className="completedList">
+        <h3>Completed Tasks ({done.length})</h3>
+        <ul>{doneTasks}</ul>
+      </div>
+    </>
+  );
+
+  return (
+    <>
+      {active.length > 0 ? (
+        <div className="activeList">
+          <h3>Active Tasks ({active.length})</h3>
+          <ul>{activeTasks}</ul>
+        </div>
+      ) : (
+        <h3>There's nothing to do, enjoy while you can ( ͡° ͜ʖ ͡°)</h3>
+      )}
+
+      {done.length > 0 ? completedList : null}
+    </>
   );
 };
 
