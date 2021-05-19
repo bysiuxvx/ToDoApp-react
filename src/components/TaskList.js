@@ -13,9 +13,24 @@ const TaskList = (props) => {
     <Task key={task.id} task={task} delete={props.delete} />
   ));
 
+  // return part
+
+  const activeList = (
+    <div className="activeList">
+      <h3>Active Tasks ({active.length})</h3>
+      <ul>{activeTasks}</ul>
+    </div>
+  );
+
+  const ifActiveEmpty = (
+    <h3>
+      There's nothing to do <br /> enjoy it while you can <br />{' '}
+      <span style={{ fontSize: 30 }}>( ͡° ͜ʖ ͡°)</span>
+    </h3>
+  );
+
   const completedList = (
     <>
-      <hr />
       <div className="completedList">
         <h3>Completed Tasks ({done.length})</h3>
         <ul>{doneTasks}</ul>
@@ -25,14 +40,7 @@ const TaskList = (props) => {
 
   return (
     <>
-      {active.length > 0 ? (
-        <div className="activeList">
-          <h3>Active Tasks ({active.length})</h3>
-          <ul>{activeTasks}</ul>
-        </div>
-      ) : (
-        <h3>There's nothing to do, enjoy while you can ( ͡° ͜ʖ ͡°)</h3>
-      )}
+      {active.length > 0 ? activeList : ifActiveEmpty}
 
       {done.length > 0 ? completedList : null}
     </>

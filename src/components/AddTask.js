@@ -24,9 +24,15 @@ const AddTask = (props) => {
     } else alert('Task name too short!');
   };
 
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      handleSubmit();
+    }
+  };
+
   return (
     <>
-      <div className="newTaskPanel">
+      <div className="newTaskPanel" onKeyDown={handleKeyDown}>
         <div className="form">
           <label html="task name">
             Task name

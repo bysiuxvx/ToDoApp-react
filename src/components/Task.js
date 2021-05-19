@@ -15,7 +15,7 @@ const Task = (props) => {
     return (
       <div className="task">
         <p>
-          <strong style={urgent ? style : null}>{text}</strong>, id: {id} <br />
+          <strong style={urgent ? style : null}>{text}</strong>, #{id} <br />
           finish by: {targetDate}{' '}
         </p>
         <button onClick={() => props.changeStatus(id)}>Done</button>
@@ -28,7 +28,7 @@ const Task = (props) => {
     return (
       <div className="task">
         <p>
-          <strong style={urgent ? style : null}>{text}</strong>, id: {id} <br />
+          <strong style={urgent ? style : null}>{text}</strong>, #{id} <br />
           finish by: {targetDate}, finished: {final}{' '}
           <button onClick={() => props.delete(id)}>X</button>
         </p>

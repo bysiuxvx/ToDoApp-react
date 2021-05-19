@@ -1,10 +1,12 @@
-div .activeList {
+.activeList {
+  min-height: 250px;
   max-height: 300px;
   overflow-y: auto;
   margin-bottom: 10px;
 }
 
-div .completedList {
+.completedList {
+  border-top: 1px solid #000;
   max-height: 300px;
   overflow-y: auto;
   margin-top: 10px;
