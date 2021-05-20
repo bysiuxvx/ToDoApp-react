@@ -54,7 +54,11 @@ const AddTask = (props) => {
                 type="date"
                 min={minDate}
                 value={date}
-                onChange={(event) => setDate(event.target.value)}
+                onChange={(event) => {
+                  if (event.target.value == '') {
+                    alert('Choose a correct date!');
+                  } else setDate(event.target.value);
+                }}
               />
             </label>
           </div>
