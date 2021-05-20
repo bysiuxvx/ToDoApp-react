@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/addtask.css';
+import { motion } from 'framer-motion';
 
 const AddTask = (props) => {
   const minDate = new Date().toISOString().slice(0, 10);
@@ -36,12 +37,13 @@ const AddTask = (props) => {
         <div className="form">
           <label html="task name">
             Task name
-            <input
+            <motion.input
               type="text"
               placeholder={'What needs to be done?'}
               maxLength="30"
               value={text}
               onChange={(event) => setText(event.target.value)}
+              whileFocus={{ scale: 1.025, boxShadow: 'inset 0 0 0.5em gold' }}
             />
           </label>
           <br />

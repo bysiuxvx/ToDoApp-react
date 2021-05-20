@@ -3,35 +3,12 @@ import '../styles/App.css';
 import AddTask from './AddTask';
 import TaskList from './TaskList';
 import Footer from './Footer';
+import { motion } from 'framer-motion';
+import { MdKeyboardArrowUp } from 'react-icons/md';
 
 const App = () => {
   const [counter, setCounter] = useState(1);
-  const [tasks, setTasks] = useState([
-    // {
-    //   text: 'Example 1',
-    //   id: 1,
-    //   urgent: true,
-    //   targetDate: '2021-07-16',
-    //   active: true,
-    //   finishDate: null,
-    // },
-    // {
-    //   text: 'Example 2',
-    //   id: 2,
-    //   urgent: false,
-    //   targetDate: '2021-06-03',
-    //   active: true,
-    //   finishDate: 'null',
-    // },
-    // {
-    //   text: 'Example 3',
-    //   id: 3,
-    //   urgent: false,
-    //   targetDate: '2021-07-16',
-    //   active: true,
-    //   finishDate: null,
-    // },
-  ]);
+  const [tasks, setTasks] = useState([]);
 
   const handleChangeStatus = (id) => {
     const newArr = [...tasks];
@@ -86,6 +63,7 @@ const App = () => {
         </div>
       </div>
       <footer>
+        <MdKeyboardArrowUp className="arrow" />
         <Footer />
       </footer>
     </div>
