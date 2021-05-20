@@ -7,6 +7,7 @@
   font-size: 18px;
   margin-left: 10px;
   text-align: center;
+  border: none;
 }
 
 .newTaskPanel .datePicker {
@@ -19,6 +20,26 @@
   text-align: center;
   margin-top: 10px;
   margin-left: 10px;
+}
+
+.newTaskPanel .submitBtn {
+  height: 50px;
+  width: 100px;
+  margin-top: 17px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  background-color: red;
+  cursor: pointer;
+  box-shadow: 3px 3px darkred;
+  transition: 0.4s ease;
+  border: none;
+}
+
+.newTaskPanel .submitBtn:hover {
+  border-radius: 25px;
+  border: 2px solid darkred;
+  box-shadow: none;
 }
 
 /* Checkbox  */

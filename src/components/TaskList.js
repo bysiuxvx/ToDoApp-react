@@ -24,8 +24,8 @@ const TaskList = (props) => {
 
   const ifActiveEmpty = (
     <h3>
-      There's nothing to do <br /> enjoy it while you can <br />{' '}
-      <span style={{ fontSize: 30 }}>( ͡° ͜ʖ ͡°)</span>
+      There's nothing to do <br /> enjoy it while you can! <br />{' '}
+      <span style={{ fontSize: 30 }} className="smiley"></span>
     </h3>
   );
 

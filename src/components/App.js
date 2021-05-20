@@ -21,14 +21,15 @@ const App = () => {
     setTasks(newArr);
   };
 
-  const addTask = (text, urgent, date) => {
+  const addTask = (text, urgent, targetDate, creationDate) => {
     const newArr = [...tasks];
     const task = {
       text: text,
       id: counter,
       urgent,
       active: true,
-      targetDate: date,
+      creationDate,
+      targetDate,
       finishDate: null,
     };
 

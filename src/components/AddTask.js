@@ -16,9 +16,14 @@ const AddTask = (props) => {
   };
 
   const handleSubmit = () => {
-    let fixedDate = formatDate(date);
+    let targetDate = formatDate(date);
+    let creationDate = formatDate(minDate);
+    if (targetDate < creationDate) {
+      alert('The target date has to be at least today!');
+      return;
+    }
     if (text.length > 0) {
-      props.addTask(text, urgent, fixedDate);
+      props.addTask(text, urgent, targetDate, creationDate);
       setText('');
       setUrgent(false);
       setDate(minDate);
@@ -74,7 +79,9 @@ const AddTask = (props) => {
             <span class="checkbox-custom rectangular"></span>
           </label>
         </div>
-        <button onClick={handleSubmit}>Add</button>
+        <button className="submitBtn" onClick={handleSubmit}>
+          New Todo
+        </button>
       </div>
     </>
   );

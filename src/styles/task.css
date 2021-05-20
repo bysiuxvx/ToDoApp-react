@@ -1,0 +1,35 @@
+.task {
+  position: relative;
+  margin: 5px auto;
+  background-color: rgb(50, 55, 75);
+  display: flex;
+  justify-content: left;
+  width: 99%;
+  color: white;
+}
+
+.task p {
+  margin-left: 100px;
+}
+
+.task button {
+  position: absolute;
+  top: 50%;
+  left: 94%;
+  transform: translate(-50%, -50%);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.urgent strong {
+  color: red;
+}
+
+button svg {
+  margin-top: 5px;
+}

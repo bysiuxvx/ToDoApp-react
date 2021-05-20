@@ -21,7 +21,7 @@ header {
 .appPanel {
   position: absolute;
   height: 850px;
-  background-color: rgba(105, 168, 142, 0.356);
+  background-color: rgb(83, 89, 110);
   width: 700px;
   top: 45%;
   left: 50%;
@@ -35,9 +35,9 @@ header {
 }
 
 .taskList {
-  width: 600px;
+  width: 630px;
   max-height: 650px;
-  background-color: yellow;
+  background-color: rgb(241, 215, 215);
   position: relative;
   transform: translate(-50%, -50%);
   left: 50%;
