@@ -106,6 +106,7 @@ div .title {
   -o-transition: all 0.3s ease-out;
   border: 2px solid #ffffff;
   margin-left: 100px;
+  box-shadow: 0 0 6px inset black, 0 0 6px black;
 }
 
 .checkbox-label input:checked ~ .checkbox-custom {
@@ -116,6 +117,7 @@ div .title {
   transform: rotate(0deg) scale(1);
   opacity: 1;
   border: 2px solid #ffffff;
+  box-shadow: 0 0 6px black;
 }
 
 .checkbox-label .checkbox-custom::after {

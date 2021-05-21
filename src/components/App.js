@@ -3,8 +3,8 @@ import '../styles/App.css';
 import AddTask from './AddTask';
 import TaskList from './TaskList';
 import Footer from './Footer';
-import { motion } from 'framer-motion';
 import { MdKeyboardArrowUp } from 'react-icons/md';
+import logo from './logo.svg';
 
 const App = () => {
   const [counter, setCounter] = useState(1);
@@ -69,6 +69,7 @@ const App = () => {
         <div className="addTask">
           <AddTask addTask={addTask} />
         </div>
+        <img src={logo} className="App-logo" alt="logo" />
         <div className="taskList">
           <TaskList
             tasks={tasks}

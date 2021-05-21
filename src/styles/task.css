@@ -23,26 +23,39 @@
   outline: none;
   border: none;
   cursor: pointer;
-  font-size: 25px;
+  font-size: 20px;
   transition: 0.7s;
+  box-shadow: 0 0 10px black;
 }
 
 .task button:hover {
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
+  font-size: 25px;
+  box-shadow: 0 0 8px inset green, 0 0 10px black;
 }
 
-.task .taskDelete {
-  color: 'red';
-  font-size: 23px;
-}
-.urgent strong {
+.taskDelete {
+  font-size: 20px;
   color: red;
-  animation: urgent 2s linear infinite;
+}
+
+.task .taskDelete:hover {
+  font-size: 25px;
+  box-shadow: 0 0 5px inset red, 0 0 3px black;
 }
 
 button svg {
   margin-top: 3px;
+  transition: 1s;
+}
+button svg:hover {
+  transform: rotate(360deg);
+}
+
+.urgent strong {
+  color: red;
+  animation: urgent 2s linear infinite;
 }
 
 @keyframes urgent {

@@ -38,8 +38,8 @@ const Task = (props) => {
           <strong>{text}</strong>, #{id} <br />
           Finish by: {targetDate}, Finished: {finishDate}{' '}
         </p>
-        <button className="taskDelete" onClick={() => props.delete(id)}>
-          <IoMdClose style={{ marginTop: 3.5 }} />
+        <button onClick={() => props.delete(id)} className="taskDelete">
+          <IoMdClose style={{ marginTop: 4.5 }} />
         </button>
       </div>
     );
