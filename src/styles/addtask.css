@@ -8,6 +8,14 @@
   margin-left: 10px;
   text-align: center;
   border: none;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: 0 0 6px inset black, 0 0 6px black;
+}
+
+.newTaskPanel .form {
+  font-size: 21px;
+  color: white;
 }
 
 .newTaskPanel .datePicker {
@@ -20,26 +28,42 @@
   text-align: center;
   margin-top: 10px;
   margin-left: 10px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 6px inset black, 0 0 6px black;
 }
 
 .newTaskPanel .submitBtn {
   height: 50px;
   width: 100px;
-  margin-top: 17px;
-  font-size: 20px;
-  font-weight: 400;
+  margin-top: 22px;
+  font-size: 18px;
   color: #fff;
-  background-color: red;
+  background-color: rgb(50, 55, 75);
   cursor: pointer;
-  box-shadow: 3px 3px darkred;
+  box-shadow: 0 0 20px black, 0 0 5px white;
   transition: 0.4s ease;
   border: none;
+  border-radius: 25px;
 }
 
 .newTaskPanel .submitBtn:hover {
-  border-radius: 25px;
-  border: 2px solid darkred;
   box-shadow: none;
+  transform: scale(1.25);
+  box-shadow: 0 0 10px black, 0 0 10px white;
+  border: none;
+  animation: pulse 1s linear infinite;
+  background-color: #1f1f1f;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 10px black, 0 0 13px white;
+  }
+  50% {
+    box-shadow: 0 0 15px black, 0 0 3px white;
+  }
 }
 
 /* Checkbox  */
@@ -58,7 +82,7 @@ div .title {
   width: 150px;
   clear: both;
   right: 100px;
-  top: 60px;
+  top: 53.5px;
 }
 
 .checkbox-label input {
@@ -124,7 +148,7 @@ div .title {
   top: 0;
   width: 6px;
   height: 12px;
-  border: solid #009bff;
+  border: solid #1f1f1f;
   border-width: 0 2px 2px 0;
   background-color: transparent;
   border-radius: 0;

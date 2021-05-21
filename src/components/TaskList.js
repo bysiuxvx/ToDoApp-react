@@ -23,7 +23,7 @@ const TaskList = (props) => {
   );
 
   const ifActiveEmpty = (
-    <h3>
+    <h3 className="funnyMessage">
       There's nothing to do <br /> enjoy it while you can! <br />{' '}
       <span style={{ fontSize: 30 }} className="smiley"></span>
     </h3>

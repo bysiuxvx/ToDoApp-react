@@ -28,19 +28,18 @@ const Task = (props) => {
       </div>
     );
   } else {
-    let finish = new Date(finishDate).toLocaleString();
-    finish = finish.slice(0, 10);
-    let final = formatDate(finish);
+    // let finish = new Date(finishDate).toLocaleString();
+    // finish = finish.slice(0, 10);
+    // finish = formatDate(finish);
+    // console.log(finish, JSON.stringify(finish));
     return (
       <div className={urgent ? 'task urgent' : 'task'}>
         <p>
           <strong>{text}</strong>, #{id} <br />
-          Finish by: {targetDate}, Finished: {final}{' '}
+          Finish by: {targetDate}, Finished: {finishDate}{' '}
         </p>
-        <button
-          onClick={() => props.delete(id)}
-          style={{ color: 'red', fontSize: 27 }}>
-          <IoMdClose style={{ marginTop: 7 }} />
+        <button className="taskDelete" onClick={() => props.delete(id)}>
+          <IoMdClose style={{ marginTop: 3.5 }} />
         </button>
       </div>
     );

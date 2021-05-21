@@ -10,12 +10,29 @@ const App = () => {
   const [counter, setCounter] = useState(1);
   const [tasks, setTasks] = useState([]);
 
+  const getFinishDate = () => {
+    let today = new Date();
+    let dd = today.getDate();
+
+    let mm = today.getMonth() + 1;
+    let yyyy = today.getFullYear();
+    if (dd < 10) {
+      dd = '0' + dd;
+    }
+
+    if (mm < 10) {
+      mm = '0' + mm;
+    }
+    today = `${dd}-${mm}-${yyyy}`;
+    return today;
+  };
+
   const handleChangeStatus = (id) => {
     const newArr = [...tasks];
     newArr.forEach((task) => {
       if (task.id === id) {
         task.active = false;
-        task.finishDate = new Date().getTime();
+        task.finishDate = getFinishDate();
       }
     });
     setTasks(newArr);
@@ -48,9 +65,6 @@ const App = () => {
 
   return (
     <div className="app">
-      <header>
-        <h2>Task list</h2>
-      </header>
       <div className="appPanel">
         <div className="addTask">
           <AddTask addTask={addTask} />

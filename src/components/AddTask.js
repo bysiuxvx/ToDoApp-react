@@ -48,7 +48,7 @@ const AddTask = (props) => {
               maxLength="30"
               value={text}
               onChange={(event) => setText(event.target.value)}
-              whileFocus={{ scale: 1.025, boxShadow: 'inset 0 0 0.5em gold' }}
+              whileFocus={{ scale: 1.025 }}
             />
           </label>
           <br />
@@ -80,7 +80,7 @@ const AddTask = (props) => {
           </label>
         </div>
         <button className="submitBtn" onClick={handleSubmit}>
-          New Todo
+          New Task
         </button>
       </div>
     </>

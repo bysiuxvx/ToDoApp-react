@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 body {
   overflow: hidden;
@@ -11,11 +12,13 @@ body {
   text-align: center;
   min-height: 100vh;
   overflow: hidden;
-  background-color: rgb(230, 243, 217);
-}
-header {
-  background-color: #fff;
-  height: 5vh;
+  background: rgb(34, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(34, 0, 36, 1) 42%,
+    rgba(164, 142, 196, 1) 87%,
+    rgba(188, 191, 231, 1) 92%
+  );
 }
 
 .appPanel {
@@ -30,18 +33,22 @@ header {
 }
 
 .addTask {
-  height: 120px;
-  margin-top: 20px;
+  height: 112px;
+  margin-top: 10px;
 }
 
 .taskList {
   width: 630px;
   max-height: 650px;
-  background-color: rgb(241, 215, 215);
   position: relative;
   transform: translate(-50%, -50%);
   left: 50%;
   top: 40%;
+  background-color: rgb(122, 127, 143);
+  color: black;
+  border-radius: 15px;
+  padding-bottom: 15px;
+  margin-top: 20px;
 }
 
 footer {
@@ -64,8 +71,6 @@ footer {
   transition: ease-out 0.7s;
   color: white;
 }
-
-/* rgb(50, 55, 75) */
 
 footer:hover {
   border-radius: 0%;

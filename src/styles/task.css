@@ -15,21 +15,41 @@
 .task button {
   position: absolute;
   top: 50%;
-  left: 94%;
+  left: 92%;
   transform: translate(-50%, -50%);
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   border-radius: 50%;
   outline: none;
   border: none;
   cursor: pointer;
   font-size: 25px;
+  transition: 0.7s;
 }
 
+.task button:hover {
+  height: 40px;
+  width: 40px;
+}
+
+.task .taskDelete {
+  color: 'red';
+  font-size: 23px;
+}
 .urgent strong {
   color: red;
+  animation: urgent 2s linear infinite;
 }
 
 button svg {
-  margin-top: 5px;
+  margin-top: 3px;
+}
+
+@keyframes urgent {
+  0% {
+    color: red;
+  }
+  50% {
+    color: white;
+  }
 }
