@@ -4,27 +4,35 @@
   justify-content: center;
   align-items: center;
   align-content: center;
-  z-index: 50;
 }
 
 footer p {
+  display: inline;
   color: white;
   text-align: center;
 }
 footer span.githubProfile {
+  display: inline-block;
   color: orange;
   cursor: pointer;
   transition: 0.6s;
 }
 
 footer span.githubProfile:hover {
-  color: red;
+  display: inline-block;
+  transform: scale(1.1);
+  margin: 10px;
 }
 
 footer .githubLogo {
   position: absolute;
-  color: red;
+  color: orange;
   right: 2%;
   font-size: 65px;
   cursor: pointer;
+  transition: 0.4s;
+}
+
+footer .githubLogo:hover {
+  transform: scale(1.2);
 }

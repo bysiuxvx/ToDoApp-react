@@ -37,12 +37,12 @@
 .newTaskPanel .submitBtn {
   height: 50px;
   width: 100px;
-  margin-top: 22px;
+  margin-top: 16px;
   font-size: 18px;
   color: #fff;
   background-color: rgb(50, 55, 75);
   cursor: pointer;
-  box-shadow: 0 0 20px black, 0 0 5px white;
+  box-shadow: 0 0 12px black, 0 0 5px white;
   transition: 0.4s ease;
   border: none;
   border-radius: 25px;

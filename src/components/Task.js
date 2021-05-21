@@ -28,10 +28,6 @@ const Task = (props) => {
       </div>
     );
   } else {
-    // let finish = new Date(finishDate).toLocaleString();
-    // finish = finish.slice(0, 10);
-    // finish = formatDate(finish);
-    // console.log(finish, JSON.stringify(finish));
     return (
       <div className={urgent ? 'task urgent' : 'task'}>
         <p>

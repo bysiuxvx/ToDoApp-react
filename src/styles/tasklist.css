@@ -13,7 +13,7 @@
 }
 
 div .taskList {
-  box-shadow: 0 0 6px inset black, 0 0 15px black, 0 0 8px white;
+  box-shadow: 0 0 6px inset black, 0 0 15px black, 0 0 6px white;
   padding: 10px;
 }
 
