@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React from 'react';
 import '../styles/task.css';
 import { IoMdClose } from 'react-icons/io';
 import { MdDone } from 'react-icons/md';

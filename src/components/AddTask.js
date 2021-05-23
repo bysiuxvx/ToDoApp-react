@@ -60,7 +60,7 @@ const AddTask = (props) => {
                 min={minDate}
                 value={date}
                 onChange={(event) => {
-                  if (event.target.value == '') {
+                  if (event.target.value === '') {
                     alert('Choose a correct date!');
                   } else setDate(event.target.value);
                 }}
@@ -68,7 +68,7 @@ const AddTask = (props) => {
             </label>
           </div>
 
-          <label class="checkbox-label">
+          <label className="checkbox-label">
             {' '}
             <div className="title">Urgent?</div>
             <input
@@ -76,7 +76,7 @@ const AddTask = (props) => {
               checked={urgent}
               onChange={(event) => setUrgent(event.target.checked)}
             />
-            <span class="checkbox-custom rectangular"></span>
+            <span className="checkbox-custom rectangular"></span>
           </label>
         </div>
         <button className="submitBtn" onClick={handleSubmit}>

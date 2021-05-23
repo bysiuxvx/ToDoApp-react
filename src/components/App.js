@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import '../styles/App.css';
 import AddTask from './AddTask';
 import TaskList from './TaskList';
