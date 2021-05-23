@@ -12,16 +12,13 @@ footer p {
   text-align: center;
 }
 footer span.githubProfile {
-  display: inline-block;
   color: orange;
   cursor: pointer;
   transition: 0.6s;
 }
 
 footer span.githubProfile:hover {
-  display: inline-block;
-  transform: scale(1.1);
-  margin: 10px;
+  font-size: 23px;
 }
 
 footer .githubLogo {

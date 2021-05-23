@@ -47,7 +47,7 @@
 
 button svg {
   margin-top: 3px;
-  transition: 1s;
+  transition: 1.5s;
 }
 button svg:hover {
   transform: rotate(360deg);
