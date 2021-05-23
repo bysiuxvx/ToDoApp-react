@@ -11,8 +11,6 @@ body {
 .app {
   text-align: center;
   min-height: 100vh;
-  overflow: hidden;
-
   background: rgb(142, 147, 196);
   background: radial-gradient(
     circle,
@@ -22,8 +20,14 @@ body {
   );
 }
 
-.appPanel {
+.appPanel,
+footer,
+.arrow,
+.App-logo {
   position: absolute;
+}
+
+.appPanel {
   height: 850px;
   background-color: rgb(83, 89, 110);
   width: 700px;
@@ -36,7 +40,7 @@ body {
 
 .addTask {
   height: 112px;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 .taskList {
@@ -56,7 +60,6 @@ body {
 footer {
   transform: translate(-50%, 88%);
   left: 50%;
-  position: absolute;
   bottom: 0;
   height: 500px;
   width: 40%;
@@ -66,7 +69,6 @@ footer {
   box-shadow: 0 0 10px inset black, 0 0 10px black;
 }
 .arrow {
-  position: absolute;
   font-size: 40px;
   transform: translate(-50%, -50%);
   left: 50%;
@@ -93,9 +95,8 @@ footer:hover .arrow {
 .App-logo {
   height: 50px;
   animation: logo-spin infinite 20s linear;
-  position: absolute;
   top: 1%;
-  right: 1.8%;
+  right: 0.6%;
 }
 
 @keyframes logo-spin {

@@ -22,12 +22,12 @@ const AddTask = (props) => {
       alert('The target date has to be at least today!');
       return;
     }
-    if (text.length > 0) {
+    if (text.length > 4) {
       props.addTask(text, urgent, targetDate, creationDate);
       setText('');
       setUrgent(false);
       setDate(minDate);
-    } else alert('Task name too short!');
+    } else alert('Task name is too short, describe it a bit more!');
   };
 
   const handleKeyDown = (event) => {
