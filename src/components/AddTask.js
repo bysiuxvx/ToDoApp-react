@@ -18,10 +18,7 @@ const AddTask = (props) => {
   const handleSubmit = () => {
     let targetDate = formatDate(date);
     let creationDate = formatDate(minDate);
-    if (targetDate < creationDate) {
-      alert('The target date has to be at least today!');
-      return;
-    }
+
     if (text.length > 4) {
       props.addTask(text, urgent, targetDate, creationDate);
       setText('');
@@ -67,17 +64,16 @@ const AddTask = (props) => {
               />
             </label>
           </div>
-
-          <label className="checkbox-label">
-            {' '}
-            <div className="title">Urgent?</div>
-            <input
-              type="checkbox"
-              checked={urgent}
-              onChange={(event) => setUrgent(event.target.checked)}
-            />
-            <span className="checkbox-custom rectangular"></span>
-          </label>
+          <div className="checkBox">
+            <label>
+              Urgent?{' '}
+              <input
+                type="checkbox"
+                checked={urgent}
+                onChange={(event) => setUrgent(event.target.checked)}
+              />
+            </label>
+          </div>
         </div>
         <button className="submitBtn" onClick={handleSubmit}>
           New Task

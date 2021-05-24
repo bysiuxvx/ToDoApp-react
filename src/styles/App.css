@@ -36,6 +36,9 @@ footer,
   transform: translate(-50%, -50%);
   border-radius: 25px;
   box-shadow: 0 0 20px inset black, 0 0 50px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .addTask {
@@ -46,15 +49,11 @@ footer,
 .taskList {
   width: 630px;
   max-height: 650px;
-  position: relative;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 40%;
   background-color: rgb(122, 127, 143);
   color: black;
   border-radius: 15px;
   padding-bottom: 15px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 footer {
@@ -106,4 +105,50 @@ footer:hover .arrow {
   to {
     transform: rotate(360deg);
   }
+}
+
+/* media query */
+
+@media (min-width: 768px) and (orientation: landscape) {
+  .appPanel {
+    height: 450px;
+  }
+
+  .addTask {
+    height: 80px;
+    margin-top: 10px;
+    background-color: red;
+    margin-right: 120px;
+  }
+
+  .taskList {
+    max-height: 340px;
+    margin-top: 15px;
+  }
+
+  footer {
+    width: 100%;
+    border-radius: 0;
+    height: 50px;
+    transform: translate(-50%, 0%);
+    font-size: 16px;
+  }
+  .arrow {
+    display: none;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .appPanel {
+    height: 450px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+}
+
+@media (orientation: landscape) and (min-width: 1600px) {
+}
+
+@media (min-width: 1024px) {
 }

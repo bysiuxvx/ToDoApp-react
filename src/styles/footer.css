@@ -34,3 +34,10 @@ footer .githubLogo {
 footer .githubLogo:hover {
   transform: scale(1.2);
 }
+
+@media (min-width: 768px) and (orientation: landscape) {
+  footer .githubLogo {
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+}
