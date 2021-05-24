@@ -80,6 +80,9 @@
   .newTaskPanel input[type='text'] {
     height: 24px;
   }
+  .newTaskPanel input[type='date'] {
+    height: 24px;
+  }
 
   .newTaskPanel .checkBox {
     position: absolute;

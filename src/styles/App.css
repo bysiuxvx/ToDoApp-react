@@ -75,15 +75,6 @@ footer {
   color: white;
 }
 
-footer:hover {
-  border-radius: 0%;
-  bottom: 0;
-  left: none;
-  transform: translate(-50%, 0%);
-  height: 130px;
-  width: 100%;
-}
-
 footer:hover .arrow {
   transform: rotate(-180deg);
   left: 49%;
@@ -122,7 +113,6 @@ footer:hover .arrow {
   .taskList {
     max-height: 265px;
     margin-top: 15px;
-    background-color: red;
   }
 
   footer {
@@ -148,7 +138,6 @@ footer:hover .arrow {
   .taskList {
     max-height: 500px;
     margin-top: 5px;
-    background-color: blue;
   }
   footer {
     width: 100%;
@@ -173,7 +162,6 @@ footer:hover .arrow {
   .taskList {
     max-height: 550px;
     margin-top: 5px;
-    background-color: green;
   }
   footer {
     width: 100%;
@@ -198,7 +186,6 @@ footer:hover .arrow {
   .taskList {
     max-height: 650px;
     margin-top: 10px;
-    background-color: pink;
   }
   footer {
     width: 100%;
@@ -223,7 +210,6 @@ footer:hover .arrow {
   .taskList {
     max-height: 520px;
     margin-top: 10px;
-    background-color: orange;
   }
   footer {
     width: 100%;
@@ -241,7 +227,23 @@ footer:hover .arrow {
     max-height: 750px;
     transform: translate(-50%, -53%);
   }
-  .taskList {
-    background-color: violet;
+  footer:hover {
+    border-radius: 0%;
+    bottom: 0;
+    left: none;
+    transform: translate(-50%, 0%);
+    height: 100px;
+    width: 100%;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 2560px) {
+  footer:hover {
+    border-radius: 0%;
+    bottom: 0;
+    left: none;
+    transform: translate(-50%, 0%);
+    height: 130px;
+    width: 100%;
   }
 }
