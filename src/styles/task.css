@@ -67,9 +67,40 @@ button svg:hover {
   }
 }
 
-@media (min-width: 768px) and (orientation: landscape) {
+@media (orientation: landscape) and (min-width: 769px) and (max-width: 1023px) {
   .task p {
     font-size: 16px;
+    margin-left: 130px;
+  }
+}
+@media (orientation: landscape) and (min-width: 1024px) and (max-width: 1279px) {
+  .task p {
+    font-size: 17px;
+    margin-left: 130px;
+  }
+}
+@media (orientation: landscape) and (min-width: 1280px) and (max-width: 1365px) {
+  .task p {
+    font-size: 17px;
+    margin-left: 130px;
+  }
+}
+@media (orientation: landscape) and (min-width: 1366px) and (max-width: 1599px) {
+  .task p {
+    font-size: 17px;
+    margin-left: 130px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1600px) and (max-width: 1919px) {
+  .task p {
+    font-size: 17px;
+    margin-left: 130px;
+  }
+}
+@media (orientation: landscape) and (min-width: 1920px) and (max-width: 2559px) {
+  .task p {
+    font-size: 18px;
     margin-left: 130px;
   }
 }

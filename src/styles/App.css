@@ -7,7 +7,6 @@
 body {
   overflow: hidden;
 }
-
 .app {
   text-align: center;
   min-height: 100vh;
@@ -109,21 +108,21 @@ footer:hover .arrow {
 
 /* media query */
 
-@media (min-width: 768px) and (orientation: landscape) {
+@media (orientation: landscape) and (min-width: 769px) and (max-width: 1023px) {
   .appPanel {
-    height: 450px;
+    height: 350px;
   }
 
   .addTask {
-    height: 80px;
+    height: 60px;
     margin-top: 10px;
-    background-color: red;
     margin-right: 120px;
   }
 
   .taskList {
-    max-height: 340px;
+    max-height: 265px;
     margin-top: 15px;
+    background-color: red;
   }
 
   footer {
@@ -138,17 +137,111 @@ footer:hover .arrow {
   }
 }
 
-@media (orientation: landscape) and (min-width: 1024px) {
+@media (orientation: landscape) and (min-width: 1024px) and (max-width: 1279px) {
   .appPanel {
-    height: 450px;
+    height: 500px;
+  }
+  .addTask {
+    height: 80px;
+    margin-right: 120px;
+  }
+  .taskList {
+    max-height: 500px;
+    margin-top: 5px;
+    background-color: blue;
+  }
+  footer {
+    width: 100%;
+    border-radius: 0;
+    height: 50px;
+    transform: translate(-50%, 0%);
+    font-size: 16px;
+  }
+  .arrow {
+    display: none;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1280px) {
+@media (orientation: landscape) and (min-width: 1280px) and (max-width: 1365px) {
+  .appPanel {
+    height: 550px;
+  }
+  .addTask {
+    height: 80px;
+    margin-right: 120px;
+  }
+  .taskList {
+    max-height: 550px;
+    margin-top: 5px;
+    background-color: green;
+  }
+  footer {
+    width: 100%;
+    border-radius: 0;
+    height: 65px;
+    transform: translate(-50%, 0%);
+    font-size: 16px;
+  }
+  .arrow {
+    display: none;
+  }
 }
 
-@media (orientation: landscape) and (min-width: 1600px) {
+@media (orientation: landscape) and (min-width: 1366px) and (max-width: 1599px) {
+  .appPanel {
+    height: 650px;
+  }
+  .addTask {
+    height: 80px;
+    margin-right: 120px;
+  }
+  .taskList {
+    max-height: 650px;
+    margin-top: 10px;
+    background-color: pink;
+  }
+  footer {
+    width: 100%;
+    border-radius: 0;
+    height: 65px;
+    transform: translate(-50%, 0%);
+    font-size: 16px;
+  }
+  .arrow {
+    display: none;
+  }
 }
 
-@media (min-width: 1024px) {
+@media (orientation: landscape) and (min-width: 1600px) and (max-width: 1919px) {
+  .appPanel {
+    height: 650px;
+  }
+  .addTask {
+    height: 80px;
+    margin-right: 120px;
+  }
+  .taskList {
+    max-height: 520px;
+    margin-top: 10px;
+    background-color: orange;
+  }
+  footer {
+    width: 100%;
+    border-radius: 0;
+    height: 75px;
+    transform: translate(-50%, 0%);
+    font-size: 18px;
+  }
+  .arrow {
+    display: none;
+  }
+}
+@media (orientation: landscape) and (min-width: 1920px) and (max-width: 2559px) {
+  .appPanel {
+    max-height: 750px;
+    transform: translate(-50%, -53%);
+  }
+  .taskList {
+    background-color: violet;
+  }
 }

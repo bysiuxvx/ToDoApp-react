@@ -76,7 +76,7 @@ const AddTask = (props) => {
           </div>
         </div>
         <button className="submitBtn" onClick={handleSubmit}>
-          New Task
+          Add Task
         </button>
       </div>
     </>

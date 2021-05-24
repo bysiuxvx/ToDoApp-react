@@ -34,11 +34,52 @@ div .taskList {
   }
 }
 
-@media (min-width: 768px) and (orientation: landscape) {
+@media (orientation: landscape) and (min-width: 769px) and (max-width: 1023px) {
   .activeList {
-    max-height: 150px;
+    max-height: 115px;
   }
   .completedList {
-    max-height: 150px;
+    max-height: 115px;
+  }
+}
+@media (orientation: landscape) and (min-width: 1024px) and (max-width: 1279px) {
+  .activeList {
+    max-height: 172px;
+  }
+  .completedList {
+    max-height: 172px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1280px) and (max-width: 1365px) {
+  .activeList {
+    max-height: 200px;
+  }
+  .completedList {
+    max-height: 200px;
+  }
+}
+@media (orientation: landscape) and (min-width: 1366px) and (max-width: 1599px) {
+  .activeList {
+    max-height: 245px;
+  }
+  .completedList {
+    max-height: 245px;
+  }
+}
+@media (orientation: landscape) and (min-width: 1600px) and (max-width: 1919px) {
+  .activeList {
+    max-height: 250px;
+  }
+  .completedList {
+    max-height: 250px;
+  }
+}
+@media (orientation: landscape) and (min-width: 1920px) and (max-width: 2559px) {
+  .activeList {
+    max-height: 260px;
+  }
+  .completedList {
+    max-height: 260px;
   }
 }

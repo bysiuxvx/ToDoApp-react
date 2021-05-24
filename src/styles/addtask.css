@@ -72,19 +72,19 @@
   }
 }
 
-@media (min-width: 768px) and (orientation: landscape) {
+@media (orientation: landscape) and (min-width: 769px) and (max-width: 1023px) {
   .newTaskPanel label {
-    font-size: 18px;
+    font-size: 15px;
   }
 
   .newTaskPanel input[type='text'] {
-    height: 28px;
+    height: 24px;
   }
 
   .newTaskPanel .checkBox {
     position: absolute;
     right: 31%;
-    top: 10.5%;
+    top: 12.8%;
   }
   .newTaskPanel .submitBtn {
     position: absolute;
@@ -92,7 +92,90 @@
     width: 50px;
     border-radius: 10px;
     right: 13%;
-    top: 2%;
+    top: 1.4%;
     font-size: 16px;
+  }
+}
+@media (orientation: landscape) and (min-width: 1024px) and (max-width: 1279px) {
+  .newTaskPanel label {
+    font-size: 16px;
+  }
+  .newTaskPanel .checkBox {
+    position: absolute;
+    right: 30%;
+    top: 13.2%;
+  }
+  .newTaskPanel .submitBtn {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    right: 11%;
+    top: 3%;
+    font-size: 16px;
+  }
+}
+@media (orientation: landscape) and (min-width: 1280px) and (max-width: 1365px) {
+  .newTaskPanel label {
+    font-size: 16px;
+  }
+  .newTaskPanel .checkBox {
+    position: absolute;
+    right: 30%;
+    top: 12%;
+  }
+  .newTaskPanel .submitBtn {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    right: 11%;
+    top: 3%;
+    font-size: 16px;
+  }
+}
+@media (orientation: landscape) and (min-width: 1366px) and (max-width: 1599px) {
+  .newTaskPanel label {
+    font-size: 17px;
+  }
+  .newTaskPanel .checkBox {
+    position: absolute;
+    right: 30%;
+    top: 10%;
+  }
+  .newTaskPanel .submitBtn {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    right: 11%;
+    top: 3%;
+    font-size: 17px;
+  }
+}
+@media (orientation: landscape) and (min-width: 1600px) and (max-width: 1919px) {
+  .newTaskPanel label {
+    font-size: 18px;
+  }
+  .newTaskPanel .checkBox {
+    position: absolute;
+    right: 30%;
+    top: 10%;
+  }
+  .newTaskPanel .submitBtn {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    right: 11%;
+    top: 3%;
+    font-size: 17px;
+  }
+}
+@media (orientation: landscape) and (min-width: 1920px) and (max-width: 2559px) {
+  .newTaskPanel .checkBox {
+    position: absolute;
+    right: 19%;
+    top: 9%;
   }
 }
