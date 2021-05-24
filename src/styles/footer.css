@@ -35,10 +35,10 @@ footer .githubLogo:hover {
   transform: scale(1.2);
 }
 
-@media (orientation: landscape) and (min-width: 769px) and (max-width: 1023px) {
+@media (orientation: landscape) and (min-width: 700px) and (max-width: 1023px) {
   footer .githubLogo {
     font-size: 30px;
-    margin-bottom: 8px;
+    margin-bottom: 0px;
   }
   footer span.githubProfile:hover {
     font-size: 20px;

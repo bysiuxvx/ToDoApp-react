@@ -99,7 +99,7 @@ footer:hover .arrow {
 
 /* media query */
 
-@media (orientation: landscape) and (min-width: 769px) and (max-width: 1023px) {
+@media (orientation: landscape) and (min-width: 700px) and (max-width: 1023px) {
   .appPanel {
     height: 350px;
   }
