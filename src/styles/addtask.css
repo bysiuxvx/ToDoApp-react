@@ -16,7 +16,8 @@
 }
 
 .newTaskPanel .datePicker {
-  margin-right: 157px;
+  display: inline-block;
+  margin-right: 30px;
 }
 .newTaskPanel input[type='date'] {
   width: 230px;
@@ -32,9 +33,7 @@
 }
 
 .newTaskPanel .checkBox {
-  position: absolute;
-  right: 20%;
-  top: 8%;
+  display: inline-block;
 }
 .newTaskPanel .checkBox * {
   cursor: pointer;
@@ -84,11 +83,6 @@
     height: 24px;
   }
 
-  .newTaskPanel .checkBox {
-    position: absolute;
-    right: 31%;
-    top: 12.8%;
-  }
   .newTaskPanel .submitBtn {
     position: absolute;
     height: 50px;
@@ -103,11 +97,7 @@
   .newTaskPanel label {
     font-size: 16px;
   }
-  .newTaskPanel .checkBox {
-    position: absolute;
-    right: 30%;
-    top: 13.2%;
-  }
+
   .newTaskPanel .submitBtn {
     position: absolute;
     height: 50px;
@@ -122,11 +112,7 @@
   .newTaskPanel label {
     font-size: 16px;
   }
-  .newTaskPanel .checkBox {
-    position: absolute;
-    right: 30%;
-    top: 12%;
-  }
+
   .newTaskPanel .submitBtn {
     position: absolute;
     height: 50px;
@@ -141,11 +127,7 @@
   .newTaskPanel label {
     font-size: 17px;
   }
-  .newTaskPanel .checkBox {
-    position: absolute;
-    right: 30%;
-    top: 10%;
-  }
+
   .newTaskPanel .submitBtn {
     position: absolute;
     height: 50px;
@@ -160,11 +142,7 @@
   .newTaskPanel label {
     font-size: 18px;
   }
-  .newTaskPanel .checkBox {
-    position: absolute;
-    right: 30%;
-    top: 10%;
-  }
+
   .newTaskPanel .submitBtn {
     position: absolute;
     height: 50px;
@@ -176,9 +154,4 @@
   }
 }
 @media (orientation: landscape) and (min-width: 1920px) and (max-width: 2559px) {
-  .newTaskPanel .checkBox {
-    position: absolute;
-    right: 19%;
-    top: 9%;
-  }
 }

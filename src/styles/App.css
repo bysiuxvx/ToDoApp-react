@@ -9,6 +9,8 @@ body {
 }
 .app {
   text-align: center;
+  display: flex;
+  justify-content: center;
   min-height: 100vh;
   background: rgb(142, 147, 196);
   background: radial-gradient(
@@ -27,12 +29,11 @@ footer,
 }
 
 .appPanel {
-  height: 850px;
+  max-height: 850px;
+  min-height: 300px;
   background-color: rgb(83, 89, 110);
   width: 700px;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 15%;
   border-radius: 25px;
   box-shadow: 0 0 20px inset black, 0 0 50px black;
   display: flex;
@@ -53,6 +54,7 @@ footer,
   border-radius: 15px;
   padding-bottom: 15px;
   margin-top: 40px;
+  margin-bottom: 13px;
 }
 
 footer {
@@ -99,9 +101,10 @@ footer:hover .arrow {
 
 /* media query */
 
-@media (orientation: landscape) and (min-width: 700px) and (max-width: 1023px) {
+@media (orientation: landscape) and (min-width: 769px) and (max-width: 1023px) {
   .appPanel {
-    height: 350px;
+    max-height: 350px;
+    min-height: 200px;
   }
 
   .addTask {
@@ -111,6 +114,7 @@ footer:hover .arrow {
   }
 
   .taskList {
+    background-color: red;
     max-height: 265px;
     margin-top: 15px;
   }
@@ -129,7 +133,7 @@ footer:hover .arrow {
 
 @media (orientation: landscape) and (min-width: 1024px) and (max-width: 1279px) {
   .appPanel {
-    height: 500px;
+    max-height: 500px;
   }
   .addTask {
     height: 80px;
@@ -153,7 +157,7 @@ footer:hover .arrow {
 
 @media (orientation: landscape) and (min-width: 1280px) and (max-width: 1365px) {
   .appPanel {
-    height: 550px;
+    max-height: 550px;
   }
   .addTask {
     height: 80px;
@@ -177,7 +181,7 @@ footer:hover .arrow {
 
 @media (orientation: landscape) and (min-width: 1366px) and (max-width: 1599px) {
   .appPanel {
-    height: 650px;
+    max-height: 650px;
   }
   .addTask {
     height: 80px;
@@ -201,7 +205,7 @@ footer:hover .arrow {
 
 @media (orientation: landscape) and (min-width: 1600px) and (max-width: 1919px) {
   .appPanel {
-    height: 650px;
+    max-height: 650px;
   }
   .addTask {
     height: 80px;
@@ -225,7 +229,6 @@ footer:hover .arrow {
 @media (orientation: landscape) and (min-width: 1920px) and (max-width: 2559px) {
   .appPanel {
     max-height: 750px;
-    transform: translate(-50%, -53%);
   }
   footer:hover {
     border-radius: 0%;
