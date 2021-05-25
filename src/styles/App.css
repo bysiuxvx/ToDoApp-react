@@ -30,7 +30,6 @@ footer,
 
 .appPanel {
   max-height: 850px;
-  min-height: 300px;
   background-color: rgb(83, 89, 110);
   width: 700px;
   top: 15%;
@@ -104,7 +103,6 @@ footer:hover .arrow {
 @media (orientation: landscape) and (min-width: 769px) and (max-width: 1023px) {
   .appPanel {
     max-height: 350px;
-    min-height: 200px;
   }
 
   .addTask {
@@ -114,7 +112,6 @@ footer:hover .arrow {
   }
 
   .taskList {
-    background-color: red;
     max-height: 265px;
     margin-top: 15px;
   }

@@ -9,12 +9,10 @@
   border-radius: 10px;
   box-shadow: 0 0 6px inset black, 0 0 6px black;
 }
-
 .newTaskPanel .form {
   font-size: 21px;
   color: white;
 }
-
 .newTaskPanel .datePicker {
   display: inline-block;
   margin-right: 30px;
@@ -31,14 +29,12 @@
   border-radius: 10px;
   box-shadow: 0 0 6px inset black, 0 0 6px black;
 }
-
 .newTaskPanel .checkBox {
   display: inline-block;
 }
 .newTaskPanel .checkBox * {
   cursor: pointer;
 }
-
 .newTaskPanel .submitBtn {
   height: 50px;
   width: 100px;
@@ -52,7 +48,6 @@
   border: none;
   border-radius: 25px;
 }
-
 .newTaskPanel .submitBtn:hover {
   box-shadow: none;
   transform: scale(1.25);
@@ -61,7 +56,6 @@
   animation: pulse 1s linear infinite;
   background-color: #1f1f1f;
 }
-
 @keyframes pulse {
   0% {
     box-shadow: 0 0 10px black, 0 0 13px white;
@@ -70,19 +64,16 @@
     box-shadow: 0 0 15px black, 0 0 3px white;
   }
 }
-
 @media (orientation: landscape) and (min-width: 769px) and (max-width: 1023px) {
   .newTaskPanel label {
     font-size: 15px;
   }
-
   .newTaskPanel input[type='text'] {
     height: 24px;
   }
   .newTaskPanel input[type='date'] {
     height: 24px;
   }
-
   .newTaskPanel .submitBtn {
     position: absolute;
     height: 50px;
@@ -97,7 +88,6 @@
   .newTaskPanel label {
     font-size: 16px;
   }
-
   .newTaskPanel .submitBtn {
     position: absolute;
     height: 50px;
@@ -112,7 +102,6 @@
   .newTaskPanel label {
     font-size: 16px;
   }
-
   .newTaskPanel .submitBtn {
     position: absolute;
     height: 50px;
@@ -127,7 +116,6 @@
   .newTaskPanel label {
     font-size: 17px;
   }
-
   .newTaskPanel .submitBtn {
     position: absolute;
     height: 50px;
@@ -142,7 +130,6 @@
   .newTaskPanel label {
     font-size: 18px;
   }
-
   .newTaskPanel .submitBtn {
     position: absolute;
     height: 50px;
