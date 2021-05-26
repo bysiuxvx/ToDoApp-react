@@ -34,7 +34,7 @@ div .taskList {
   }
 }
 
-@media (orientation: landscape) and (min-width: 769px) and (max-width: 1023px) {
+@media (orientation: landscape) and (min-width: 768px) and (max-width: 1023px) {
   .activeList {
     max-height: 115px;
   }
