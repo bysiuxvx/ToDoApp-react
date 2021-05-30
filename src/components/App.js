@@ -38,12 +38,12 @@ const App = () => {
     setTasks(newArr);
   };
 
-  const addTask = (text, urgent, targetDate, creationDate) => {
+  const addTask = (text, important, targetDate, creationDate) => {
     const newArr = [...tasks];
     const task = {
       text: text,
       id: counter,
-      urgent,
+      important,
       active: true,
       creationDate,
       targetDate,

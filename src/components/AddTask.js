@@ -6,7 +6,7 @@ const AddTask = (props) => {
   const minDate = new Date().toISOString().slice(0, 10);
 
   const [text, setText] = useState('');
-  const [urgent, setUrgent] = useState(false);
+  const [important, setImportant] = useState(false);
   const [date, setDate] = useState(minDate);
 
   const formatDate = (dateStr) => {
@@ -20,9 +20,9 @@ const AddTask = (props) => {
     let creationDate = formatDate(minDate);
 
     if (text.length > 4) {
-      props.addTask(text, urgent, targetDate, creationDate);
+      props.addTask(text, important, targetDate, creationDate);
       setText('');
-      setUrgent(false);
+      setImportant(false);
       setDate(minDate);
     } else alert('Task name is too short, describe it a bit more!');
   };
@@ -66,11 +66,11 @@ const AddTask = (props) => {
           </div>
           <div className="checkBox">
             <label>
-              Urgent?{' '}
+              Important{' '}
               <input
                 type="checkbox"
-                checked={urgent}
-                onChange={(event) => setUrgent(event.target.checked)}
+                checked={important}
+                onChange={(event) => setImportant(event.target.checked)}
               />
             </label>
           </div>

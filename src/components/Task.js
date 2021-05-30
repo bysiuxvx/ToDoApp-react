@@ -4,7 +4,7 @@ import { IoMdClose } from 'react-icons/io';
 import { MdDone } from 'react-icons/md';
 
 const Task = (props) => {
-  const { text, id, urgent, targetDate, creationDate, active, finishDate } =
+  const { text, id, important, targetDate, creationDate, active, finishDate } =
     props.task;
 
   const formatDate = (dateStr) => {
@@ -15,7 +15,7 @@ const Task = (props) => {
 
   if (active) {
     return (
-      <div className={urgent ? 'task urgent' : 'task'}>
+      <div className={important ? 'task important' : 'task'}>
         <p>
           <strong>{text}</strong>, #{id} <br />
           Created: {creationDate}, Finish by: {targetDate}{' '}
@@ -29,7 +29,7 @@ const Task = (props) => {
     );
   } else {
     return (
-      <div className={urgent ? 'task urgent' : 'task'}>
+      <div className={important ? 'task important' : 'task'}>
         <p>
           <strong>{text}</strong>, #{id} <br />
           Finish by: {targetDate}, Finished: {finishDate}{' '}

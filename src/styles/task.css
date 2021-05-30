@@ -54,12 +54,12 @@ button svg:hover {
   transform: rotate(360deg);
 }
 
-.urgent strong {
+.important strong {
   color: red;
-  animation: urgent 2s linear infinite;
+  animation: important 2s linear infinite;
 }
 
-@keyframes urgent {
+@keyframes important {
   0% {
     color: red;
   }
