@@ -2,7 +2,7 @@
   "name": "to-do-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bysiuxvx.github.io/ToDoApp",
+  "homepage": "https://bysiuxvx.github.io/ToDoApp-react",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
