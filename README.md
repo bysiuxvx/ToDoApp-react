@@ -11,7 +11,7 @@ This is a project I've been working on recently, testing out my React skills. It
 
 ## Demo
 
-[Live demo of the app](https://bysiuxvx.github.io/ToDoApp/)
+[Live demo of the app](https://bysiuxvx.github.io/ToDoApp-react/)
 
 ## Possible changes
 
